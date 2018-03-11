@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/* @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css); */
+
+
+@font-face {
+    font-family: 'Makinas-Scrap-5';
+    src: url('../fonts/Makinas-Scrap-5.woff') format('woff'),
+    url('../fonts/Makinas-Scrap-5.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Makinas-Scrap-5-Rounded';
+    src: url('../fonts/Makinas-Scrap-5-Rounded.woff') format('woff'),
+    url('../fonts/Makinas-Scrap-5-Rounded.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body, html{
+    line-height: 1;
+}
+.w100 {font-weight: 100;}
+.w200 {font-weight: 200;}
+.w300 {font-weight: 300;}
+.w400 {font-weight: 400;}
+.w500 {font-weight: 500;}
+.w700 {font-weight: 700;}
+.w900 {font-weight: 900;}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+html, body, h1, h2, h3, h4, 
+ul, ol, dl, li, dt, dd, p, 
+div, span, img, a, table, tr, th, td{
+    margin  : 0;
+    padding : 0;
+    border: 0;
+    font-weight: normal;
+    font-size: 100%;
+    vertical-align: baseline;
+    -webkit-box-sizing: border-box;
+    -mox-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Makinas-Scrap-5-Rounded', -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+    color: #292F33;
+}

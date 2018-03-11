@@ -1,0 +1,154 @@
+@charset "UTF-8" ;
+
+.modal-content {
+	max-width: 500px;
+	margin: 0;
+	padding: 16px 16px;
+	border: 2px solid #aaa;
+	background: #fff;
+	position: fixed;
+	display: none;
+	z-index: 2;
+} 
+#modal-overlay {
+	z-index: 1;
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 120%;
+	background-color: rgba( 0,0,0, 0.75 );
+}
+.button-link {
+	color: #00f;
+	text-decoration: underline;
+}
+.button-link:hover {
+	cursor: pointer;
+	color: #f00;
+}
+
+/* モーダルスタイル */
+.modal-content .title{
+	font-size: 1.2em;
+	margin-bottom: 12px;
+}
+.modal-content .buttons{
+	display: table;
+	width: 100%;
+}
+.modal-content form{
+	display: inline-block;
+	/* width: 100%; */
+}
+/* ノーマルボタン */
+.modal-content .buttons .square_btn {
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: #67c5ff;
+  border: solid 2px #67c5ff;
+  border-radius: 3px;
+  transition: .4s;
+}
+.modal-content .buttons .square_btn:hover {
+  background: #67c5ff;
+  color: white;
+}
+
+/* 閉じるボタン */
+.modal-content .buttons .close{
+	margin-top: 8px;
+	display: inline-block;
+	clear: both;
+	width: 100%;
+	text-align: center;
+	color: rgba( 0,0,0, 0.54);
+	border: solid 2px rgba( 0,0,0, 0.54);
+}
+.modal-content .buttons .close:hover{
+	color: rgba( 0,0,0, 0.54);
+	border: solid 2px rgba( 0,0,0, 0.54);
+	background: rgba( 0,0,0, 0.24);
+}
+
+/* 削除ボタン */
+.modal-content .buttons .delete{
+	float: left;
+	text-align: center;
+	color: rgba( 255,0,0, 0.54);
+	border: solid 2px rgba( 255,0,0, 0.54);
+	margin-right: 8px;
+}
+.modal-content .buttons .delete:hover{
+	color: rgba( 255,0,0, 0.54);
+	border: solid 2px rgba( 255,0,0, 0.54);
+	background: rgba( 255,0,0, 0.24);
+	margin-right: 8px;
+}
+
+.modal-content .buttons .done{
+	float: right;
+}
+
+.modal-content .buttons .new{
+	float: right;
+	margin-top: 8px;
+}
+/* 新規追加閉じる */
+.modal-content .buttons .new-close{
+	margin-top: 8px;
+	display: inline-block;
+	text-align: center;
+	color: rgba( 0,0,0, 0.54);
+	border: solid 2px rgba( 0,0,0, 0.54);
+}
+.modal-content .buttons .new-close:hover{
+	color: rgba( 0,0,0, 0.54);
+	border: solid 2px rgba( 0,0,0, 0.54);
+	background: rgba( 0,0,0, 0.24);
+}
+
+.modal-content .text-field{
+	position: relative;
+  margin-top: 1.5rem;
+}
+.modal-content .text-field input{
+	width: 300px;
+	padding-bottom: 0.2rem;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+	font-size: 16px;
+	transition: 256ms;
+}
+.modal-content .text-field input:focus{
+	border-bottom: 2px solid #13bf00;
+}
+.modal-content .text-field label{
+	position: absolute;
+	left: 0;
+	top: -2px;
+	color: #888;
+	pointer-events: none;
+	transition: 256ms;
+}
+.modal-content .text-field input.focused + label{
+	color: #13bf00;
+	top: -1rem;
+	font-size: 0.6rem;
+}
+
+
+
+
+
+.delete-form{
+	float: left;
+}
+.update-form{
+	float: right;
+}
