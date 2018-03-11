@@ -11,6 +11,7 @@ if($checkLogin['status'] == 200)
   header("Location: {$logined_url}");
 }
 else{
-  echo "<a href='https://access.line.me/oauth2/v2.1/authorize?response_type=code&client_id=$client_id&redirect_uri=$callback_url&state=12345abcde&scope=openid%20profile&nonce=09876xyz'>Login<a>";
+  $login_url = "https://access.line.me/oauth2/v2.1/authorize?response_type=code&client_id=$client_id&redirect_uri=$callback_url&state=12345abcde&scope=openid%20profile&nonce=09876xyz";
+  header("Location: {$login_url}");
 }
 ?>
