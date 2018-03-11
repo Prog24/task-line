@@ -20,7 +20,7 @@ $tasks = getAllTask($checkLogin['pdo'], $_SESSION['userId']);
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>Task LINE</title>
+<title>Task LINE - 全てのタスク</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="format-detection" content="telephone=no">
 <meta name="viewport" content="width=device-width,user-scalable=0">

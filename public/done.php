@@ -20,7 +20,7 @@ $_SESSION['back_url'] = "{$public_url}done.php";
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>Task LINE</title>
+<title>Task LINE - 完了済みタスク</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="format-detection" content="telephone=no">
 <meta name="viewport" content="width=device-width,user-scalable=0">
